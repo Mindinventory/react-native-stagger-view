@@ -1,0 +1,20 @@
+{
+  "name": "react-native-stagger-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-native": "^0.66.11",
+    "typescript": "^4.5.4"
+  }
+}
