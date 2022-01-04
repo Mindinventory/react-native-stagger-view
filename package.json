@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Provide staggered list with multiple columns.",
   "main": "src/index.tsx",
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +11,25 @@
     "react": "*",
     "react-native": "*"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mindinventory/react-native-stagger-view.git"
+  },
   "author": "Mindinventory",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mindinventory/react-native-stagger-view/issues"
+  },
+  "homepage": "https://github.com/Mindinventory/react-native-stagger-view#readme",
   "devDependencies": {
     "@types/react": "^17.0.38",
     "@types/react-native": "^0.66.11",
     "typescript": "^4.5.4"
-  }
+  },
+  "keywords": [
+    "react-native-stagger-view",
+    "rn-stagger-view",
+    "react-native-stagger-list",
+    "rn-stagger-list"
+  ]
 }
