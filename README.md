@@ -2,11 +2,13 @@
 
 A **@mindinventory/react-native-stagger-view** package is used to show listing with the Staggered, It works like a normal Flatlist with included refreshing, loading, header, footer, renderItem, loaderView, custom style of header footer and container but it's managed dynamic height of the Item just you need give Item height in its style.
 
-https://user-images.githubusercontent.com/48902198/148036163-c8270a2c-b8f9-4a46-af19-77303110a70f.mp4
+
+![stagger_list](https://user-images.githubusercontent.com/48902198/148067650-1949d1f0-b446-4ebc-b378-384e66fd7b8e.png)
 
 ### Installation
 
 using npm:
+
 
 ```
 npm install @mindinventory/react-native-stagger-view
