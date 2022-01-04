@@ -1,7 +1,7 @@
 {
-  "name": "react-native-stagger-view",
+  "name": "@mindinventory/react-native-stagger-view",
   "version": "1.0.0",
-  "description": "",
+  "description": "Provide staggered list with multiple columns.",
   "main": "src/index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "react": "*",
     "react-native": "*"
   },
-  "author": "",
+  "author": "Mindinventory",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^17.0.38",

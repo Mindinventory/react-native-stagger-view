@@ -10,9 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@mindinventory/react-native-stagger-view": "file:../mindinventory-react-native-stagger-view-1.0.0.tgz",
     "react": "17.0.2",
-    "react-native": "0.66.4",
-    "react-native-stagger-view": "file:../react-native-stagger-view-1.0.0.tgz"
+    "react-native": "0.66.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

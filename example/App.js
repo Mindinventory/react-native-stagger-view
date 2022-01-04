@@ -16,7 +16,7 @@ import {
   Image,
   ActivityIndicator,
 } from 'react-native';
-import StaggeredList from 'react-native-stagger-view';
+import StaggeredList from '@mindinventory/react-native-stagger-view';
 
 const App = () => {
   const SCREEN_WIDTH = Dimensions.get('window').width;
@@ -71,20 +71,20 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      {isLoading ? (
-        <View style={styles.activityIndicatorWraper}>
-          <ActivityIndicator color={'white'} size={'large'} />
-        </View>
-      ) : (
-        <View style={styles.mainWrapperView}>
-          <StaggeredList
-            data={imageURL}
-            contentContainerStyle={styles.contentContainer}
-            showsVerticalScrollIndicator={false}
-            renderItem={({item}) => renderChildren(item)}
-          />
-        </View>
-      )}
+      <View style={styles.mainWrapperView}>
+        <StaggeredList
+          data={imageURL}
+          contentContainerStyle={styles.contentContainer}
+          showsVerticalScrollIndicator={false}
+          renderItem={({item}) => renderChildren(item)}
+          loading={isLoading}
+          LoadingView={
+            <View style={styles.activityIndicatorWraper}>
+              <ActivityIndicator color={'white'} size={'large'} />
+            </View>
+          }
+        />
+      </View>
     </SafeAreaView>
   );
 };
