@@ -71,7 +71,7 @@ const getChildrenStyle = () => {
 
 ### Documentation
 
-| Prop | Type | description | Default |
+| Prop | Type | Description | Default |
 | --- | --- | --- | --- |
 | innerRef | ```MutableRefObject<ScrollView>``` | ScrollView ref to be forwarded to the underlying scrollView. | undefined |
 | keyPrefix | string | Unique key for each item. |  |
