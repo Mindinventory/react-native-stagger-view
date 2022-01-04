@@ -79,7 +79,7 @@ const App = () => {
           renderItem={({item}) => renderChildren(item)}
           loading={isLoading}
           LoadingView={
-            <View style={styles.activityIndicatorWraper}>
+            <View style={styles.activityIndicatorWrapper}>
               <ActivityIndicator color={'white'} size={'large'} />
             </View>
           }
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     paddingTop: 20,
   },
-  activityIndicatorWraper: {
+  activityIndicatorWrapper: {
     alignSelf: 'center',
     justifyContent: 'center',
     flex: 1,
