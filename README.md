@@ -27,7 +27,7 @@ yarn add @mindinventory/react-native-stagger-view
 ### Usage
 
 ```js
-import StaggeredList from 'react-native-stagger-view';
+import StaggeredList from '@mindinventory/react-native-stagger-view';
 ...
 
 <StaggeredList
