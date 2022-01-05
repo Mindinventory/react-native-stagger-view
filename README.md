@@ -101,7 +101,7 @@ const getChildrenStyle = () => {
 
 ### LICENSE!
 
-@mindinventory/react-native-stagger-view is [MIT-licensed](https://github.com/Mindinventory/rn-top-navbar/blob/master/LICENSE).
+@mindinventory/react-native-stagger-view is [MIT-licensed](https://github.com/Mindinventory/react-native-stagger-view/blob/main/LICENSE).
 
 ### Let us know!
 
