@@ -15,6 +15,7 @@ import {
   Dimensions,
   Image,
   ActivityIndicator,
+  Text,
 } from 'react-native';
 import StaggeredList from '@mindinventory/react-native-stagger-view';
 
@@ -24,6 +25,7 @@ const App = () => {
   const [imageURL, setImageURL] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
+ // export type AnimationType = 'FADE_IN_FAST' | 'SLIDE_LEFT' | 'SLIDE_DOWN' | 'EFFECTIVE' | 'FLIPPED' | 'NONE';
   useEffect(() => {
     const fetchImages = () => {
       setIsLoading(true);
@@ -72,18 +74,25 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.mainWrapperView}>
-        <StaggeredList
-          data={imageURL}
-          contentContainerStyle={styles.contentContainer}
-          showsVerticalScrollIndicator={false}
-          renderItem={({item}) => renderChildren(item)}
-          loading={isLoading}
-          LoadingView={
-            <View style={styles.activityIndicatorWrapper}>
-              <ActivityIndicator color={'white'} size={'large'} />
-            </View>
-          }
-        />
+        {isLoading ? (
+          <View style={styles.activityIndicatorWrapper}>
+            <ActivityIndicator color={'white'} size={'large'} />
+          </View>
+        ) : (
+          <StaggeredList
+            data={imageURL}
+            animationType={'SLIDE_LEFT'}
+            contentContainerStyle={styles.contentContainer}
+            showsVerticalScrollIndicator={false}
+            renderItem={({item}) => renderChildren(item)}
+            isLoading={isLoading}
+            LoadingView={
+              <View style={styles.activityIndicatorWrapper}>
+                <ActivityIndicator color={'white'} size={'large'} />
+              </View>
+            }
+          />
+        )}
       </View>
     </SafeAreaView>
   );
