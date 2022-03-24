@@ -42,7 +42,6 @@ function StaggeredList<T>(props: Props<T>): ReactElement {
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const value = useRef(new Animated.Value(0));
 
-
   const {
     animationType =  'NONE',
     keyPrefix,
@@ -66,7 +65,6 @@ function StaggeredList<T>(props: Props<T>): ReactElement {
   } = props;
 
   const { style, ...propsWithoutStyle } = props;
-
 
   // Fade In fast
   useEffect(() => {
@@ -105,7 +103,6 @@ function StaggeredList<T>(props: Props<T>): ReactElement {
     );
   };
 
-
   const SlideLeftAnimation = ({item,index}: { item: ReactElement,index:number}) => {
     const SlideLeftAnimation = useRef(new Animated.Value(0)).current;
     const translateX = SlideLeftAnimation.interpolate({
@@ -129,7 +126,6 @@ function StaggeredList<T>(props: Props<T>): ReactElement {
   }}>{item}</Animated.View>;
   };
 
-
   const SlideDownAnimation = ({item,index}: { item: ReactElement,index:number}) => {
     const slideRightAnimatedValue = useRef(new Animated.Value(0)).current;
     const translateY = slideRightAnimatedValue.interpolate({
@@ -152,7 +148,6 @@ function StaggeredList<T>(props: Props<T>): ReactElement {
     ],
   }}>{item}</Animated.View>;
   };
-
 
   const FlipedAnimation = ({item,index}: { item: ReactElement,index:number}) => {
     const rotateAnimateValue = useRef(new Animated.Value(0)).current;
@@ -179,8 +174,6 @@ function StaggeredList<T>(props: Props<T>): ReactElement {
       </View>
     );
   };
-
-
 
   const EffectiveAnimation = ({item,index}: { item: ReactElement,index:number}) => {
   const yAxis = useRef(new Animated.Value(0)).current;
@@ -227,9 +220,6 @@ function StaggeredList<T>(props: Props<T>): ReactElement {
     },
   ]}>{item}</Animated.View>
   };
-
-
-
 
   const RenderItem = ({item,index}: { item: ReactElement,index:number}) => {
     return(
@@ -319,7 +309,6 @@ function StaggeredList<T>(props: Props<T>): ReactElement {
     </ScrollView>
   );
 }
-
 
 const isCloseToBottom = (
   { layoutMeasurement, contentOffset, contentSize }: NativeScrollEvent,
