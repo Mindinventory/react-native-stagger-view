@@ -31,7 +31,7 @@ import StaggeredList from '@mindinventory/react-native-stagger-view';
 
 <StaggeredList
             data={imageURL}
-            animationType={'FADE_IN_FAST}
+            animationType={'FADE_IN_FAST'}
             contentContainerStyle={styles.contentContainer}
             showsVerticalScrollIndicator={false}
             renderItem={({item}) => renderChildren(item)}
@@ -112,7 +112,4 @@ We’d be really happy if you send us links to your projects where you use our c
 
 ## 📌 Credits :
 
-This project exists, thanks to all the people who contribute.
-
-<a href="https://github.com/hyochan">
-</a>
+This project is made possible by the community surrounding it and especially the wonderful people. staggered basically clone form this repo[GitHub Repo](https://github.com/hyochan/react-native-masonry-list/)
