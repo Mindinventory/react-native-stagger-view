@@ -30,17 +30,18 @@ import StaggeredList from '@mindinventory/react-native-stagger-view';
 ...
 
 <StaggeredList
-   data={imageURL}
-   contentContainerStyle={styles.contentContainer}
-   showsVerticalScrollIndicator={false}
-   renderItem={({item}) => renderChildren(item)}
-   loading={isLoading}
-   LoadingView={
-     <View style={styles.activityIndicatorWraper}>
-        <ActivityIndicator color={'white'} size={'large'} />
-     </View>
-    }
- />
+            data={imageURL}
+            animationType={'FADE_IN_FAST}
+            contentContainerStyle={styles.contentContainer}
+            showsVerticalScrollIndicator={false}
+            renderItem={({item}) => renderChildren(item)}
+            isLoading={isLoading}
+            LoadingView={
+              <View style={styles.activityIndicatorWrapper}>
+                <ActivityIndicator color={'black'} size={'large'} />
+              </View>
+            }
+          />
 
  const renderChildren = item => {
     return (
@@ -74,7 +75,7 @@ const getChildrenStyle = () => {
 
 | Prop                     | Type                                                                                 | Description                                                                                                                                 | Default   |
 | ------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| animationType            | 'FADE_IN_FAST' OR 'SLIDE_LEFT' OR 'SLIDE_DOWN' OR 'EFFECTIVE' OR 'FLIPPED' OR 'NONE' | Appying Animation to list or default NONE item.                                                                                             |           |
+| animationType            | `FADE_IN_FAST` OR `SLIDE_LEFT` OR `SLIDE_DOWN` OR `EFFECTIVE` OR `FLIPPED` OR `NONE` | Appying Animation to list or default NONE item.                                                                                             |           |
 | innerRef                 | `MutableRefObject<ScrollView>`                                                       | ScrollView ref to be forwarded to the underlying scrollView.                                                                                | undefined |
 | innerRef                 | `MutableRefObject<ScrollView>`                                                       | ScrollView ref to be forwarded to the underlying scrollView.                                                                                | undefined |
 | keyPrefix                | string                                                                               | Unique key for each item.                                                                                                                   |           |
@@ -108,3 +109,10 @@ const getChildrenStyle = () => {
 ### Let us know!
 
 We’d be really happy if you send us links to your projects where you use our component. Just send an email to sales@mindinventory.com And do let us know if you have any questions or suggestion regarding our work.
+
+## 📌 Credits :
+
+This project exists, thanks to all the people who contribute.
+
+<a href="https://github.com/hyochan">
+</a>
