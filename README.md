@@ -112,4 +112,4 @@ We’d be really happy if you send us links to your projects where you use our c
 
 ## 📌 Credits :
 
-This project is made possible by the community surrounding it and especially the wonderful people. staggered basically clone form this repo [GitHub Repo](https://github.com/hyochan/react-native-masonry-list/)
+This project is made possible by the community surrounding it and especially the wonderful people. Rendering a list is basically clone form this repo [GitHub Repo](https://github.com/hyochan/react-native-masonry-list/)
