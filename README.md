@@ -4,6 +4,15 @@ A **@mindinventory/react-native-stagger-view** package is used to show listing w
 
 <a href="https://www.mindinventory.com/?utm_source=gthb&utm_medium=repo&utm_campaign=react-native-stagger-view"><img src="https://user-images.githubusercontent.com/48902198/148067650-1949d1f0-b446-4ebc-b378-384e66fd7b8e.png"></a>
 
+### Animations
+
+![Fade In](https://user-images.githubusercontent.com/88423352/160378928-a2e472c6-df2f-4e11-9566-cd1e32e67a3e.gif)
+![Slide-Left](https://user-images.githubusercontent.com/88423352/160379456-33f6202c-4184-4ecd-852b-a85c099faf71.gif)
+![Slide-Down](https://user-images.githubusercontent.com/88423352/160379469-37adc7e9-9ebf-4a46-a895-0ecaf7c226ec.gif)
+![Effective](https://user-images.githubusercontent.com/88423352/160378368-563dc457-54e6-421d-94c6-534e3bd9e9cc.gif)
+![Flipped](https://user-images.githubusercontent.com/88423352/160379485-809a22e8-82f8-4016-aa57-0d1553f54e15.gif)
+
+
 ### Installation
 
 using npm:
