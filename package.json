@@ -1,6 +1,6 @@
 {
   "name": "@mindinventory/react-native-stagger-view",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Provide staggered list with multiple columns.",
   "main": "src/index.tsx",
   "private": false,
