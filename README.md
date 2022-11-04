@@ -107,9 +107,9 @@ const getChildrenStyle = () => {
 
 ### Changelog
 
-**Version: 1.1.0**
+**Version: 1.2.0**
 
-- Initial Build
+- Fixed Objects are not valid as a React child issue.
 
 ### LICENSE!
 
