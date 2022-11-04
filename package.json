@@ -36,17 +36,21 @@
     "bootstrap": "yarn example && yarn install && yarn example pods"
   },
   "keywords": [
-    "react-native",
-    "ios",
-    "android"
+    "react-native-stagger-view",
+    "rn-stagger-view",
+    "react-native-stagger-list",
+    "rn-stagger-list"
   ],
-  "repository": "https://github.com/harshinventory/mindinventory-react-native-stagger-view",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mindinventory/react-native-stagger-view.git"
+  },
   "author": "harshinventory <harsh.parmar@mindinventory.com> (https://github.com/harshinventory)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/harshinventory/mindinventory-react-native-stagger-view/issues"
+    "url": "https://github.com/Mindinventory/react-native-stagger-view/issues"
   },
-  "homepage": "https://github.com/harshinventory/mindinventory-react-native-stagger-view#readme",
+  "homepage": "https://github.com/Mindinventory/react-native-stagger-view#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
