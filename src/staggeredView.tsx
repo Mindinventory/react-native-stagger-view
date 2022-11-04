@@ -1,4 +1,4 @@
-import React, { memo, ReactElement, useRef } from 'react';
+import React, { useRef } from 'react';
 import {
   Animated,
   NativeScrollEvent,
@@ -60,7 +60,7 @@ const StaggeredList = <T extends unknown>(props: StaggeredListProps<T>) => {
       }}
     >
       <View style={ListHeaderComponentStyle}>{ListHeaderComponent}</View>
-      {data.length === 0 && ListEmptyComponent ? (
+      {data?.length === 0 && ListEmptyComponent ? (
         React.isValidElement(ListEmptyComponent) ? (
           ListEmptyComponent
         ) : (
@@ -75,22 +75,24 @@ const StaggeredList = <T extends unknown>(props: StaggeredListProps<T>) => {
                 style={[stageredViewStyles.list, style]}
               >
                 {data
-                  .map((el, index) => {
-                    if (index % numColumns === num) {
-                      return (
-                        <Animations
-                          index={index}
-                          key={`keyPrefix-${(index * 1).toString()}`}
-                          item={renderItem({ item: el, i: index })}
-                          value={value}
-                          numColumns={numColumns}
-                          animationType={animationType}
-                        />
-                      );
-                    }
-                    return null;
-                  })
-                  .filter((e) => !!e)}
+                  ? data
+                      ?.map((el, index) => {
+                        if (index % numColumns === num) {
+                          return (
+                            <Animations
+                              index={index}
+                              key={`keyPrefix-${(index * 1).toString()}`}
+                              item={renderItem({ item: el, i: index })}
+                              value={value}
+                              numColumns={numColumns}
+                              animationType={animationType}
+                            />
+                          );
+                        }
+                        return null;
+                      })
+                      .filter((e) => !!e)
+                  : null}
               </View>
             );
           })}

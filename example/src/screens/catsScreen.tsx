@@ -7,7 +7,6 @@ import {
   Dimensions,
   Image,
   ActivityIndicator,
-  FlatList,
 } from 'react-native';
 import StaggeredList, {
   AnimationType,
@@ -75,10 +74,6 @@ const CatsScreen = () => {
         {isLoading ? (
           <View style={styles.activityIndicatorWrapper}>
             <ActivityIndicator color={'black'} size={'large'} />
-            <FlatList
-              data={imageURL}
-              renderItem={({ item }) => renderChildren(item)}
-            />
           </View>
         ) : (
           <StaggeredList
