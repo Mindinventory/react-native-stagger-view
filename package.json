@@ -1,6 +1,6 @@
 {
   "name": "@mindinventory/react-native-stagger-view",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
