@@ -16,7 +16,7 @@ const AnimationOptionScreen = () => {
         <View style={styles.selectAnimContainer}>
           <Text style={styles.selectAnimText}>SELECT ANIMATION TYPE</Text>
         </View>
-        <View style={{ height: 50 }}></View>
+        <View style={{ height: 50 }} />
         <TouchableOpacity
           style={styles.animOptionStyle}
           onPress={() =>
@@ -58,7 +58,7 @@ const AnimationOptionScreen = () => {
           <Text style={styles.animOtherOptionText}>EFFECTIVE</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={styles.animOptionFlippedStyle}
+          style={styles.animOptionStyle}
           onPress={() =>
             navigation.navigate('AnimationScreen', {
               animationType: 'FLIPPED',
@@ -66,6 +66,16 @@ const AnimationOptionScreen = () => {
           }
         >
           <Text style={styles.animOtherOptionText}>FLIPPED</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.animOptionNoneStyle}
+          onPress={() =>
+            navigation.navigate('AnimationScreen', {
+              animationType: 'None',
+            })
+          }
+        >
+          <Text style={styles.animOtherOptionText}>None</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -99,7 +109,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0.2,
     borderColor: 'gray',
   },
-  animOptionFlippedStyle: {
+  animOptionNoneStyle: {
     marginStart: 16,
   },
   animOptionText: {
